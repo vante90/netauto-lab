@@ -1,6 +1,6 @@
 # WAN CI/CD Automation
 
-A network automation CI/CD portfolio project. A virtual multi-site WAN
+A network automation CI/CD WAN project. A virtual multi-site WAN
 (built in GNS3) is managed as code and validated by a pipeline.
 
 ## Topology
