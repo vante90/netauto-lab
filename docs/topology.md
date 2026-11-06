@@ -14,9 +14,13 @@ graph LR
     C2 --- B1
     C1 --- E1
     E1 --- B2
+    C1 --- E2
+    E2 --- E1
+    E2 --- B1
 ```
 
-9 WAN nodes, 12 links. Nodes: A1, A2, B1, B2, C1, C2, D1, D2, E1.
+10 WAN nodes (all IOSv), 15 links.
+Nodes: A1, A2, B1, B2, C1, C2, D1, D2, E1, E2.
 
 ## Link table
 
@@ -34,3 +38,6 @@ graph LR
 | 10 | WAN-C2 | WAN-B1 |
 | 11 | WAN-C1 | WAN-E1 |
 | 12 | WAN-E1 | WAN-B2 |
+| 13 | WAN-C1 | WAN-E2 |
+| 14 | WAN-E2 | WAN-E1 |
+| 15 | WAN-E2 | WAN-B1 |
