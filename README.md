@@ -5,8 +5,8 @@ A network automation CI/CD portfolio project. A virtual multi-site WAN
 
 ## Topology
 
-See [docs/topology.md](docs/topology.md): 9 WAN routers (A1, A2, B1, B2,
-C1, C2, D1, D2, E1) connected by 12 links.
+See [docs/topology.md](docs/topology.md): 10 IOSv WAN routers (A1, A2, B1,
+B2, C1, C2, D1, D2, E1, E2) connected by 15 links.
 
 ## Repository layout
 
