@@ -1,0 +1,23 @@
+# Secrets
+*.vault_pass
+.vault_pass*
+.env
+*.pem
+*.key
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Lab images and project files (licensed, never commit)
+*.qcow2
+*.vmdk
+*.iso
+*.gns3project
+.gns3/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
