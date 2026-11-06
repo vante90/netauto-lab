@@ -1,26 +1,36 @@
-# Lab Topology
+# WAN CI/CD Automation: Topology
 
 ```mermaid
-graph TD
-    subgraph SiteA["Site A"]
-        WANA["WAN-A (IOSv)"]
-        CA1["Core-A1 (NX-OSv)"]
-        CA2["Core-A2 (NX-OSv)"]
-    end
-    subgraph SiteB["Site B"]
-        WANB["WAN-B (IOSv)"]
-        CB1["Core-B1 (NX-OSv)"]
-        CB2["Core-B2 (NX-OSv)"]
-    end
-
-    WANA --- WANB
-    WANA --- CA1
-    WANA --- CA2
-    WANB --- CB1
-    WANB --- CB2
-    CA1 --- CA2
-    CB1 --- CB2
-    CA1 --- CB1
-    CA2 --- CB2
+graph LR
+    A1 --- A2
+    A1 --- B1
+    A1 --- C1
+    A2 --- B2
+    B1 --- B2
+    A2 --- D1
+    D1 --- D2
+    D2 --- B1
+    C1 --- C2
+    C2 --- B1
+    C1 --- E1
+    E1 --- B2
 ```
 
+9 WAN nodes, 12 links. Nodes: A1, A2, B1, B2, C1, C2, D1, D2, E1.
+
+## Link table
+
+| # | Endpoint 1 | Endpoint 2 |
+|---|---|---|
+| 1 | WAN-A1 | WAN-A2 |
+| 2 | WAN-A1 | WAN-B1 |
+| 3 | WAN-A1 | WAN-C1 |
+| 4 | WAN-A2 | WAN-B2 |
+| 5 | WAN-B1 | WAN-B2 |
+| 6 | WAN-A2 | WAN-D1 |
+| 7 | WAN-D1 | WAN-D2 |
+| 8 | WAN-D2 | WAN-B1 |
+| 9 | WAN-C1 | WAN-C2 |
+| 10 | WAN-C2 | WAN-B1 |
+| 11 | WAN-C1 | WAN-E1 |
+| 12 | WAN-E1 | WAN-B2 |

@@ -1,14 +1,12 @@
-# netauto-lab
+# WAN CI/CD Automation
 
-A network automation CI/CD portfolio project. A virtual multi-site network
+A network automation CI/CD portfolio project. A virtual multi-site WAN
 (built in GNS3) is managed as code and validated by a pipeline.
 
 ## Topology
 
-See [docs/topology.md](docs/topology.md).
-
-- 2 WAN routers (IOSv), one per site, linked to each other
-- 4 core switches (NX-OSv), 2 per site, in a square between the sites
+See [docs/topology.md](docs/topology.md): 9 WAN routers (A1, A2, B1, B2,
+C1, C2, D1, D2, E1) connected by 12 links.
 
 ## Repository layout
 
@@ -22,12 +20,11 @@ See [docs/topology.md](docs/topology.md).
 
 ## Roadmap
 
-- [x] Phase 1: Foundations (git, platform, first IOSv and NX-OSv boot)
+- [ ] Phase 1: Foundations (git, platform, first router boot)
 - [ ] Phase 2: Source of truth (NetBox/Nautobot)
 - [ ] Phase 3: Ansible config management and Vault
 - [ ] Phase 4: Linting and testing (pyATS / Batfish)
 - [ ] Phase 5: CI/CD pipeline
-- [ ] Phase 6: Fabric and IPNs
 
 ## Notes
 
